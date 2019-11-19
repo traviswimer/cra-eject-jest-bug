@@ -1,0 +1,44 @@
+Arguments: 
+  /Users/travis/.nvm/versions/node/v8.11.1/bin/node /Users/travis/.nvm/versions/node/v8.11.1/bin/yarn install
+
+PATH: 
+  /Users/travis/google-cloud-sdk/bin:/Users/travis/.nvm/versions/node/v8.11.1/bin:~/Library/Android/sdk/platform-tools:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin
+
+Yarn version: 
+  1.17.3
+
+Node version: 
+  8.11.1
+
+Platform: 
+  darwin x64
+
+Trace: 
+  SyntaxError: /Users/travis/repos/TEST_JEST_WORKSPACE/package.json: Unexpected token } in JSON at position 193
+      at JSON.parse (<anonymous>)
+      at /Users/travis/.nvm/versions/node/v8.11.1/lib/node_modules/yarn/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/Users/travis/.nvm/versions/node/v8.11.1/lib/node_modules/yarn/lib/cli.js:304:30)
+      at /Users/travis/.nvm/versions/node/v8.11.1/lib/node_modules/yarn/lib/cli.js:315:13
+      at <anonymous>
+
+npm manifest: 
+  {
+    "name": "TEST_JEST_WORKSPACE",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "private": true,
+    "workspaces": {
+  		"packages": [
+  			"main_app",
+        "something"
+  		]
+  	},
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
